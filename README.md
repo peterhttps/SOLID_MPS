@@ -4,11 +4,13 @@
 ## 01 Jogo da velha
 
 Princípio SOLID S - Single Responsibility Principle
+
 Onde na classe `Tabuleiro` havia inúmeros métodos com várias responsabilidades diferentes, algo que pôde ser separado em várias classes com métodos mais específicos
 
 ## 02 Saudacao
 
 Princípio SOLID O - Open-Closed Principle
+
 Onde foi possível implementar uma interface 
 ```java
 interface Etiqueta {
@@ -28,11 +30,13 @@ public class Formal implements Etiqueta {
 ## 03 Apartamento
 
 Princípio SOLID L - Liskov Substitution Principle
+
 Onde as classes derivadas de `Apartamento` possam ser substituidas por sua clase base, como `Cobertura` e `Studio` que devem poder ter a capacidade de realizar o "extends" da classe `Apartamento`.
 
 ## 04 Ave
 
 Princípio SOLID I - Interface Segregation Principle
+
 A classe `Penguin` não deve implementar a interface `Ave` para herdar métodos as quais nunca irá utilizar, pois nesse caso os penguins não apresentam o método `voa()`
 ```java
 public class Pinguin implements Ave {
@@ -56,6 +60,7 @@ public class Pinguin implements Ave {
 ## 05 Clima Tracker
 
 Princípio SOLID D - Dependency Inversion Principle
+
 Módulos de alto nível não devem depender de módulos de baixo nível, então foi gerada uma classe 
 ```java
 public class Alerta {
